@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <p th:text ="${room.id}"></p>
+    <p th:text ="${room.roomName}"></p>
+    <p th:text ="${room.roomDescription}"></p>
+    <p th:text ="${room.roomDuration}"></p>
+
+    <form th:action="@{'/room/join/' + ${room.id}}" method="post">
+        <button>방에 참가하기</button>
+
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/user/profile" method="post">
+        <div class="form-group">
+            <p th:text="|안녕하세요.${user.name} 님|" ></p>
+            <p>현재 방 정보</p>
+            <p>회원정보수정</p>
+            <p>방나가기</p>
+            <p>문의하기</p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
